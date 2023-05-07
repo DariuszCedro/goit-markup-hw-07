@@ -1,10 +1,3 @@
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  color: var(--text-color-primary);
-  background-color: var(--background-color-primary);
-}
-
 .logo-header {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -278,10 +271,6 @@ header {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-}
-
-.section {
-  padding: 94px 0;
 }
 
 ul,
