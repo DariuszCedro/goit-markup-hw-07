@@ -17,34 +17,40 @@
   </head>
   <body>
     <header>
-      <div class="container div-header">
-        <a class="logo-header" href="./index.html"><span>Web</span>Studio</a>
+      <div class="container header">
+        <a class="logo logo--header" href="./index.html"
+          ><span>Web</span>Studio</a
+        >
         <nav>
-          <ul class="navigation-list div-header">
-            <li class="nav-border">
-              <a class="navigation-item transition-element" href="./index.html"
+          <ul class="navigation">
+            <li class="navigation--border">
+              <a
+                class="navigation__link transition--primary"
+                href="./index.html"
                 >Agencja</a
               >
             </li>
             <li>
               <a
-                class="navigation-item transition-element"
+                class="navigation__link transition--primary"
                 href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
             <li>
-              <a class="navigation-item transition-element" href="">Kontakt</a>
+              <a class="navigation__link transition--primary" href=""
+                >Kontakt</a
+              >
             </li>
           </ul>
         </nav>
-        <div class="div-contact">
+        <div class="contact-container">
           <div>
             <a
-              class="contact transition-element"
+              class="contact-link transition--primary"
               href="mailto:info@devstudio.com"
               ><svg
-                class="contact-icon transition-element"
+                class="contact-icon transition--primary"
                 width="16px"
                 height="12px"
               >
@@ -53,9 +59,11 @@
             >
           </div>
           <div>
-            <a class="contact transition-element" href="tel:info@devstudio.com"
+            <a
+              class="contact-link transition--primary"
+              href="tel:info@devstudio.com"
               ><svg
-                class="contact-icon transition-element"
+                class="contact-icon transition--primary"
                 width="10px"
                 height="16px"
               >
@@ -67,9 +75,9 @@
       </div>
     </header>
     <main>
-      <section class="section-effective">
-        <div class="effective-background">
-          <div class="container order">
+      <section class="section-secondary">
+        <div class="section-secondary--background">
+          <div class="container container--display">
             <h1>
               EFEKTYWNE ROZWIĄZANIA<br />
               DLA WASZEGO BIZNESU
@@ -153,9 +161,9 @@
       </section>
       <section class="section">
         <div class="container">
-          <ul class="list-whatwedo-text">
+          <ul class="grid-primary">
             <li>
-              <div class="effective-icon-background">
+              <div class="grid-primary__icon">
                 <svg width="70px" height="70px">
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
@@ -167,7 +175,7 @@
               </p>
             </li>
             <li>
-              <div class="effective-icon-background">
+              <div class="grid-primary__icon">
                 <svg width="70px" height="70px">
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
@@ -179,7 +187,7 @@
               </p>
             </li>
             <li>
-              <div class="effective-icon-background">
+              <div class="grid-primary__icon">
                 <svg width="70px" height="70px">
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
@@ -191,7 +199,7 @@
               </p>
             </li>
             <li>
-              <div class="effective-icon-background">
+              <div class="grid-primary__icon">
                 <svg width="70px" height="70px">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
@@ -203,42 +211,42 @@
               </p>
             </li>
           </ul>
-          <h2 class="headers-secondary">Czym się zajmujemy</h2>
-          <ul class="list-whatwedo-picture">
-            <li class="container-relative">
+          <h2 class="section__header">Czym się zajmujemy</h2>
+          <ul class="grid-secondary">
+            <li class="grid-secondary__container">
               <img
                 src="./images/writting_on_keyboard.jpg"
                 alt="Writting on keyboard"
                 width="370"
                 height="294"
               />
-              <p class="label">APLIKACJE KOMPUTEROWE</p>
+              <p class="grid-secondary__label">APLIKACJE KOMPUTEROWE</p>
             </li>
-            <li class="container-relative">
+            <li class="grid-secondary__container"">
               <img
                 src="./images/man_with_laptop.jpg"
                 alt="Working with smartphone and laptop"
                 width="370"
                 height="294"
               />
-              <p class="label">APLIKACJE MOBILNE</p>
+              <p class="grid-secondary__label">APLIKACJE MOBILNE</p>
             </li>
-            <li class="container-relative">
+            <li class="grid-secondary__container">
               <img
                 src="./images/tablet.jpg"
                 alt="Tablet held in hand"
                 width="370"
                 height="294"
               />
-              <p class="label">ROZWIĄZANIA GRAFICZNE</p>
+              <p class="grid-secondary__label">ROZWIĄZANIA GRAFICZNE</p>
             </li>
           </ul>
         </div>
       </section>
       <section class="section-team section">
         <div class="container">
-          <h2 class="headers-secondary">Nasz zaspół</h2>
-          <ul class="list-team">
+          <h2 class="section__header">Nasz zaspół</h2>
+          <ul class="grid-team">
             <li>
               <figure>
                 <img
@@ -247,40 +255,40 @@
                   width="270"
                   height="260"
                 />
-                <figcaption class="team-figcaption">
+                <figcaption class="grid-team__figcaption">
                   <h4>John Doe</h4>
                   <p>Product Designer</p>
-                  <div class="team-icon-list">
-                    <a class="social-link transition-element" href="">
+                  <div class="grid-team__icon-container">
+                    <a class="social-link transition--primary" href="">
                       <svg
-                        class="team-icon transition-element"
+                        class="grid-team__icon transition--primary"
                         width="44px"
                         height="44px"
                       >
                         <use href="./images/icons.svg#icon-instagram-2"></use>
                       </svg>
                     </a>
-                    <a class="social-link transition-element" href="">
+                    <a class="social-link transition--primary" href="">
                       <svg
-                        class="team-icon transition-element"
+                        class="grid-team__icon transition--primary"
                         width="44px"
                         height="44px"
                       >
                         <use href="./images/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
-                    <a class="social-link transition-element" href="">
+                    <a class="social-link transition--primary" href="">
                       <svg
-                        class="team-icon transition-element"
+                        class="grid-team__icon transition--primary"
                         width="44px"
                         height="44px"
                       >
                         <use href="./images/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
-                    <a class="social-link transition-element" href="">
+                    <a class="social-link transition--primary" href="">
                       <svg
-                        class="team-icon transition-element"
+                        class="grid-team__icon transition--primary"
                         width="44px"
                         height="44px"
                       >
@@ -299,40 +307,40 @@
                   width="270"
                   height="260"
                 />
-                <figcaption class="team-figcaption">
+                <figcaption class="grid-team__figcaption">
                   <h4>John Doe</h4>
                   <p>Frontend Developer</p>
-                  <div class="team-icon-list">
-                    <a class="social-link transition-element" href="">
+                  <div class="grid-team__icon-container">
+                    <a class="social-link transition--primary" href="">
                       <svg
-                        class="team-icon transition-element"
+                        class="grid-team__icon transition--primary"
                         width="44px"
                         height="44px"
                       >
                         <use href="./images/icons.svg#icon-instagram-2"></use>
                       </svg>
                     </a>
-                    <a class="social-link transition-element" href="">
+                    <a class="social-link transition--primary" href="">
                       <svg
-                        class="team-icon transition-element"
+                        class="grid-team__icon transition--primary"
                         width="44px"
                         height="44px"
                       >
                         <use href="./images/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
-                    <a class="social-link transition-element" href="">
+                    <a class="social-link transition--primary" href="">
                       <svg
-                        class="team-icon transition-element"
+                        class="grid-team__icon transition--primary"
                         width="44px"
                         height="44px"
                       >
                         <use href="./images/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
-                    <a class="social-link transition-element" href="">
+                    <a class="social-link transition--primary" href="">
                       <svg
-                        class="team-icon transition-element"
+                        class="grid-team__icon transition--primary"
                         width="44px"
                         height="44px"
                       >
@@ -351,36 +359,36 @@
                   width="270"
                   height="260"
                 />
-                <figcaption class="team-figcaption">
+                <figcaption class="grid-team__figcaption">
                   <h4>John Doe</h4>
                   <p>Marketing</p>
-                  <div class="team-icon-list transition-element">
-                    <a class="social-link transition-element" href="">
-                      <svg class="team-icon" width="44px" height="44px">
+                  <div class="grid-team__icon-container transition--primary">
+                    <a class="social-link transition--primary" href="">
+                      <svg class="grid-team__icon" width="44px" height="44px">
                         <use href="./images/icons.svg#icon-instagram-2"></use>
                       </svg>
                     </a>
-                    <a class="social-link transition-element" href="">
+                    <a class="social-link transition--primary" href="">
                       <svg
-                        class="team-icon transition-element"
+                        class="grid-team__icon transition--primary"
                         width="44px"
                         height="44px"
                       >
                         <use href="./images/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
-                    <a class="social-link transition-element" href="">
+                    <a class="social-link transition--primary" href="">
                       <svg
-                        class="team-icon transition-element"
+                        class="grid-team__icon transition--primary"
                         width="44px"
                         height="44px"
                       >
                         <use href="./images/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
-                    <a class="social-link transition-element" href="">
+                    <a class="social-link transition--primary" href="">
                       <svg
-                        class="team-icon transition-element"
+                        class="grid-team__icon transition--primary"
                         width="44px"
                         height="44px"
                       >
@@ -399,40 +407,40 @@
                   width="270"
                   height="260"
                 />
-                <figcaption class="team-figcaption">
+                <figcaption class="grid-team__figcaption">
                   <h4>John Doe</h4>
                   <p>UI Designer</p>
-                  <div class="team-icon-list">
-                    <a class="social-link transition-element" href="">
+                  <div class="grid-team__icon-container">
+                    <a class="social-link transition--primary" href="">
                       <svg
-                        class="team-icon transition-element"
+                        class="grid-team__icon transition--primary"
                         width="44px"
                         height="44px"
                       >
                         <use href="./images/icons.svg#icon-instagram-2"></use>
                       </svg>
                     </a>
-                    <a class="social-link transition-element" href="">
+                    <a class="social-link transition--primary" href="">
                       <svg
-                        class="team-icon transition-element"
+                        class="grid-team__icon transition--primary"
                         width="44px"
                         height="44px"
                       >
                         <use href="./images/icons.svg#icon-twitter-1"></use>
                       </svg>
                     </a>
-                    <a class="social-link transition-element" href="">
+                    <a class="social-link transition--primary" href="">
                       <svg
-                        class="team-icon transition-element"
+                        class="grid-team__icon transition--primary"
                         width="44px"
                         height="44px"
                       >
                         <use href="./images/icons.svg#icon-facebook-1"></use>
                       </svg>
                     </a>
-                    <a class="social-link transition-element" href="">
+                    <a class="social-link transition--primary" href="">
                       <svg
-                        class="team-icon transition-element"
+                        class="grid-team__icon transition--primary"
                         width="44px"
                         height="44px"
                       >
@@ -448,55 +456,55 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="headers-secondary">Nasi klienci</h2>
-          <div class="list-clients">
-            <a class="client-link transition-element" href=""
+          <h2 class="section__header">Nasi klienci</h2>
+          <div class="grid-client">
+            <a class="grid-client__link transition--primary" href=""
               ><svg
-                class="client-icon transition-element"
+                class="grid-client__icon transition--primary"
                 width="41px"
                 height="46.7px"
               >
                 <use href="./images/icons.svg#icon-group"></use></svg
             ></a>
 
-            <a class="client-link transition-element" href=""
+            <a class="grid-client__link transition--primary" href=""
               ><svg
-                class="client-icon transition-element"
+                class="grid-client__icon transition--primary"
                 width="40px"
                 height="52px"
               >
                 <use href="./images/icons.svg#icon-group-1"></use></svg
             ></a>
 
-            <a class="client-link transition-element" href=""
+            <a class="grid-client__link transition--primary" href=""
               ><svg
-                class="client-icon transition-element"
+                class="grid-client__icon transition--primary"
                 width="43.46px"
                 height="41.18px"
               >
                 <use href="./images/icons.svg#icon-group-2"></use></svg
             ></a>
-            <a class="client-link transition-element" href=""
+            <a class="grid-client__link transition--primary" href=""
               ><svg
-                class="client-icon transition-element"
+                class="grid-client__icon transition--primary"
                 width="84.44px"
                 height="40.62"
               >
                 <use href="./images/icons.svg#icon-group-3"></use></svg
             ></a>
 
-            <a class="client-link transition-element" href=""
+            <a class="grid-client__link transition--primary" href=""
               ><svg
-                class="client-icon transition-element"
+                class="grid-client__icon transition--primary"
                 width="62.54px"
                 height="45.43px"
               >
                 <use href="./images/icons.svg#icon-group-4"></use></svg
             ></a>
 
-            <a class="client-link transition-element" href=""
+            <a class="grid-client__link transition--primary" href=""
               ><svg
-                class="client-icon transition-element"
+                class="grid-client__icon transition--primary"
                 width="93.79px"
                 height="43.93px"
               >
@@ -506,43 +514,47 @@
         </div>
       </section>
     </main>
-    <footer class="footer-address">
+    <footer class="footer">
       <div class="container">
         <div>
-          <a class="logo-footer" href="./index.html"><span>Web</span>Studio</a>
+          <a class="logo logo--footer" href="./index.html"
+            ><span>Web</span>Studio</a
+          >
           <address>m. Warszawa, Aleje Jerozolimskie 21</address>
           <div>
             <a
-              class="contact transition-element"
+              class="contact-link transition--primary"
               href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             ><br />
-            <a class="contact transition-element" href="tel:info@devstudio.com"
+            <a
+              class="contact-link transition--primary"
+              href="tel:info@devstudio.com"
               >+48 111 111 111</a
             >
           </div>
         </div>
 
-        <div class="footer-socials">
+        <div class="footer__socials">
           <div>
             <h5>DOŁĄCZ DO NAS</h5>
-            <div class="footer-icon-list">
-              <a class="social-link footer-link transition-element" href="">
+            <div class="footer__icon-container">
+              <a class="social-link social-link--footer transition--primary" href="">
                 <svg class="footer-icon" width="44px" height="44px">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </a>
-              <a class="social-link footer-link transition-element" href="">
+              <a class="social-link social-link--footer transition--primary" href="">
                 <svg class="footer-icon" width="44px" height="44px">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
-              <a class="social-link footer-link transition-element" href="">
+              <a class="social-link social-link--footer transition--primary" href="">
                 <svg class="footer-icon" width="44px" height="44px">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </a>
-              <a class="social-link footer-link transition-element" href="">
+              <a class="social-link social-link--footer transition--primary" href="">
                 <svg class="footer-icon" width="44px" height="44px">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
