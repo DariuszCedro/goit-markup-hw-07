@@ -1,0 +1,33 @@
+.navigation {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 1.17214;
+  font-weight: 500;
+  padding-left: 0;
+  column-gap: 46px;
+  display: flex;
+  align-items: center;
+
+  &__link {
+    text-decoration: none;
+    color: $text-color-primary;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $hover-effect;
+  }
+
+  &--border {
+    position: relative;
+  }
+
+  &--border::after {
+    content: "";
+    position: absolute;
+    bottom: -32px;
+    left: 0;
+    width: 100%;
+    border-bottom: 4px solid $hover-effect;
+  }
+}

@@ -1,0 +1,23 @@
+.contact-link {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.17214;
+  color: $text-color-secondary;
+  text-decoration: none;
+
+  &__icon {
+    fill: #757575;
+    margin-right: 10px;
+    align-self: center;
+  }
+
+  &:hover,
+  &:focus {
+    color: $hover-effect;
+  }
+
+  &:hover &__icon,
+  &:focus &__icon {
+    fill: $hover-effect;
+  }
+}

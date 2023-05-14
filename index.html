@@ -50,7 +50,7 @@
               class="contact-link transition--primary"
               href="mailto:info@devstudio.com"
               ><svg
-                class="contact-icon transition--primary"
+                class="contact-link__icon transition--primary"
                 width="16px"
                 height="12px"
               >
@@ -63,7 +63,7 @@
               class="contact-link transition--primary"
               href="tel:info@devstudio.com"
               ><svg
-                class="contact-icon transition--primary"
+                class="contact-link__icon transition--primary"
                 width="10px"
                 height="16px"
               >
@@ -86,73 +86,77 @@
               Zamów usługe
             </button>
             <div data-modal class="backdrop is-hidden">
-              <div class="modal transition-modal">
-                <button class="modal-close" data-modal-close type="button">
+              <div class="modal transition--primary">
+                <button class="modal__close" data-modal-close type="button">
                   <svg width="18px" height="18px">
                     <use href="./images/icons.svg#close-black"></use>
                   </svg>
                 </button>
                 <form name="order_form" autocomplete="off" novalidate>
-                  <p class="form-header">
+                  <p class="modal__form-header">
                     Zostaw swoje dane w formularzu poniżej
                   </p>
-                  <label class="form-label" for="username">Imie</label>
-                  <div class="input-container">
+                  <label class="modal__form-label" for="username">Imie</label>
+                  <div class="modal__input">
                     <svg width="18px" height="18px">
                       <use href="./images/icons.svg#icon-person-black"></use>
                     </svg>
                     <input
                       id="username"
-                      class="input-property"
+                      class="modal__input--property"
                       type="text"
                       name="username"
                     />
                   </div>
-                  <label class="form-label" for="phone">Telefon</label>
-                  <div class="input-container">
+                  <label class="modal__form-label" for="phone">Telefon</label>
+                  <div class="modal__input">
                     <svg width="18px" height="18px">
                       <use href="./images/icons.svg#icon-phone-black"></use>
                     </svg>
                     <input
                       id="phone"
-                      class="input-property"
+                      class="modal__input--property"
                       type="tel"
                       name="phone-number"
                     />
                   </div>
-                  <label class="form-label" for="email">Email</label>
-                  <div class="input-container">
+                  <label class="modal__form-label" for="email">Email</label>
+                  <div class="modal__input">
                     <svg width="18px" height="18px">
                       <use href="./images/icons.svg#icon-email-black"></use>
                     </svg>
                     <input
                       id="email"
-                      class="input-property"
+                      class="modal__input--property"
                       type="email"
                       name="client-email"
                     />
                   </div>
-                  <label class="form-label" for="comment">Komentarz</label>
+                  <label class="modal__form-label" for="comment">Komentarz</label>
 
                   <textarea
-                    class="textarea-order"
-                    id="comment"
-                    name="client-comment"
-                    placeholder="Wprowadź tekst"
-                  ></textarea>
-                  <div class="policy-check">
-                    <input
-                      type="checkbox"
-                      name="policy"
-                      class="checkbox-icon"
-                    />
-                    <div class="icon-svg"></div>
-                    <p class="policy-text">
-                      Oświadczam iż akceptuję <a href="">Regulamin</a> i
-                      <a href="">Politykę Prywatności</a>.
-                    </p>
-                  </div>
-                  <button class="send-button" type="submit">Wyślij</button>
+                  class="modal__textarea"
+                  id="comment"
+                  name="client-comment"
+                  placeholder="Wprowadź tekst"
+                ></textarea>
+                <div class="modal__policy-checkbox">
+                  <input
+                    type="checkbox"
+                    name="policy"
+                    class="modal__checkbox-icon"
+                    id="check"
+                  />
+                  <label
+                    class="modal__vector transition-element"
+                    for="check"
+                  ></label>
+                  <p class="modal__policy-text">
+                    Oświadczam iż akceptuję <a href="">Regulamin</a> i
+                    <a href="">Politykę Prywatności</a>.
+                  </p>
+                </div>
+                <button class="modal__button-send" type="submit">Wyślij</button>
                 </form>
               </div>
             </div>
@@ -562,21 +566,21 @@
             </div>
           </div>
         </div>
-        <form class="newsletter-email" name="newsletter">
-          <div class="news-input">
-            <label for="news" class="newsletter-label"
+        <form class="newsletter" name="newsletter">
+          <div>
+            <label for="news" class="newsletter__label"
               >ZAPISZ SIĘ DO NEWSLETTERA</label
             >
             <input
               id="news"
-              class="input-email"
+              class="newsletter__input"
               type="email"
               name="email"
               placeholder="E-mail"
             />
           </div>
-          <button class="sign-in-button" type="submit">
-            Zapisz się<svg class="send-icon" width="24px" height="24px">
+          <button class="newsletter__button" type="submit">
+            Zapisz się<svg class="newsletter__icon" width="24px" height="24px">
               <use href="./images/icons.svg#icon-icon-send"></use>
             </svg>
           </button>

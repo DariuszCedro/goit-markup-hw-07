@@ -50,7 +50,7 @@
               class="contact-link transition--primary"
               href="mailto:info@devstudio.com"
               ><svg
-                class="contact-icon transition--primary"
+                class="contact-link__icon transition--primary"
                 width="16px"
                 height="12px"
               >
@@ -63,7 +63,7 @@
               class="contact-link transition--primary"
               href="tel:info@devstudio.com"
               ><svg
-                class="contact-icon transition--primary"
+                class="contact-link__icon transition--primary"
                 width="10px"
                 height="16px"
               >
@@ -76,7 +76,7 @@
     </header>
     <main>
       <section class="section">
-        <div class="container container--filters">
+        <div class="container--filters">
           <ul class="filter">
             <li>
               <button class="filter__product transition--primary" type="button">
@@ -370,21 +370,21 @@
             </div>
           </div>
         </div>
-        <form class="newsletter-email" name="newsletter">
+        <form class="newsletter" name="newsletter">
           <div class="news-input">
-            <label for="news" class="newsletter-label"
+            <label for="news" class="newsletter__label"
               >ZAPISZ SIĘ DO NEWSLETTERA</label
             >
             <input
               id="news"
-              class="input-email"
+              class="newsletter__input"
               type="email"
               name="email"
               placeholder="E-mail"
             />
           </div>
-          <button class="sign-in-button" type="submit">
-            Zapisz się<svg class="send-icon" width="24px" height="24px">
+          <button class="newsletter__button" type="submit">
+            Zapisz się<svg class="newsletter__icon" width="24px" height="24px">
               <use href="./images/icons.svg#icon-icon-send"></use>
             </svg>
           </button>

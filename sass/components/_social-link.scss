@@ -1,0 +1,13 @@
+.social-link {
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: $hover-effect;
+  }
+  &--footer {
+    background-color: $footer-icon;
+  }
+}

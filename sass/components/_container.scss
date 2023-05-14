@@ -1,0 +1,19 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+
+  & .logo--header {
+    margin-right: 93px;
+    padding: 25px 0 24px;
+  }
+  &--display {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  &--filters {
+    @extend .container;
+    margin-bottom: 50px;
+  }
+}
