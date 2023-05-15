@@ -5,6 +5,9 @@
 
   &__icon {
     fill: $social-icon-color;
+    transition-property: color, background-color, box-shadow, fill, border-color;
+    transition-duration: $transition-duration;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__link {
     display: flex;
@@ -14,6 +17,9 @@
     align-items: center;
     border: 1px solid $social-icon-color;
     border-radius: 4px;
+    transition-property: color, background-color, box-shadow, fill, border-color;
+    transition-duration: $transition-duration;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__link:hover,

@@ -29,6 +29,9 @@
     display: flex;
     fill: $social-icon-color;
     padding: 12px;
+    transition-property: color, background-color, box-shadow, fill, border-color;
+    transition-duration: $transition-duration;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__icon:hover,
   .social-link:focus &__icon {
