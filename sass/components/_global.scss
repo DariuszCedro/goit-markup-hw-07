@@ -14,6 +14,10 @@ ul.grid-primary {
   margin-bottom: 94px;
 }
 
+header {
+  border-bottom: 1px solid $header-border-color;
+}
+
 figure {
   margin: 0;
   padding: 0;
